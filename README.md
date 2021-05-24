@@ -1,5 +1,5 @@
 # takehome
-THis is a take home assessment 
+This is a take home assessment 
 
 ## Usage
 1. Run 'npm install' from the root. This installs the necessary dependencies for the service to run.
