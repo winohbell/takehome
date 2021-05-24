@@ -37,9 +37,12 @@ class PostComment extends React.Component {
                         <input type="text" placeholder="Comment" onChange={this.handleCommentChange.bind(this)}/>
                     </div>
                 </div>
-                <div id="button-wrapper">
-                    <button onClick={() =>{this.props.handlePost(this.state.name, this.state.email, this.state.comment)}}>Post</button>
+                <div id="button-div">
+                    <div id="button-wrapper">
+                        <button onClick={() =>{this.props.handlePost(this.state.name, this.state.email, this.state.comment)}}>Post</button>
+                    </div>
                 </div>
+                
                     
             </div>
         )

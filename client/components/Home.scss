@@ -1,0 +1,32 @@
+@mixin selectedBox {
+    width:100%;
+    background: #ececec;
+    color: #414141;
+    display: block;
+    position: absolute;
+    padding: 5px 0;
+    border: 0 none;
+    outline: none;
+}
+
+
+body {
+    height: 100%;
+    background: #ffffff; 
+    color: #414141;
+    font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+#home {
+    left: 20vw;
+    width: 60%;
+    top: 20vh;
+    position: relative;
+    select {
+        @include selectedBox;
+        font: 400 17px/2em 'Source Sans Pro', sans-serif;
+        height: 40px;
+    }
+}
+
+

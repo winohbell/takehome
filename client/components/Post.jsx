@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import Comment from './Comment.jsx';
 import PostComment from './PostComment.jsx';
 
-
+import './Post.scss';
 
 class Post extends React.Component {
 
@@ -72,7 +72,7 @@ handleErr() {
 
   render() {
     return (
-        <div id="Post">
+        <div id="post">
             <div id="original-post">
                 <h1>{this.state.post.title}</h1>
                 <h3>{this.state.post.body}</h3>

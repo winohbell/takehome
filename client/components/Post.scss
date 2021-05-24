@@ -1,0 +1,75 @@
+@mixin inputBox {
+    width:100%;
+    background: #ececec;
+    color: #414141;
+    padding: 3px 5px 3px 5px;
+    border: 0 none;
+    outline: none;
+}
+
+body {
+    height: 100%;
+    background: #ffffff; 
+    color: #414141;
+    font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+#post {
+    margin: 10vw;
+}
+#original-post {
+    border-bottom: 2px solid gray;
+    h3 {
+        line-height: 1em;
+        color: #7E7E7E;
+    }
+}
+
+.individual-comment {
+    border-bottom: 1px dotted lightgray;
+    h4{
+        line-height:1em;
+    }
+    h5{
+        line-height: 1em;
+        color: #7E7E7E;
+    }
+}
+
+
+#post-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+#info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    input {
+        @include inputBox;
+        width: 25vw;
+        height: 2em;
+    }
+}
+
+#comment-wrapper {
+    margin-top: 20px;;
+    input {
+        @include inputBox;
+        width: 55vw;
+        height: 15em;
+    }
+}
+
+#button-div{
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    #button-wrapper {
+        button {
+            top: 50%;
+            width: 10vw;
+        }
+    }
+    
+}
